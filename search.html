@@ -98,17 +98,17 @@
         for (var z = 0; z < x[0].length; z++) {
         if (x[y][z] == pos1) {
             a = y;
-            a = z;
+            a4 = z;
         }
 
         if (x[y][z] == pos2) {
-            a3 = y;
+            a1 = y;
             a2= z;
         }
      }
 }
 
-var row = Math.abs(a - a3);
+var row = Math.abs(a - a1);
 var column = Math.abs(a4 - a2);
 return row + column - 1;
 
