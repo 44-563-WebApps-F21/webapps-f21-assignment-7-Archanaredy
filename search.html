@@ -113,6 +113,18 @@ var column = Math.abs(a4 - a2);
 return row + column - 1;
 
 }
+function startnewgame() {
+            triesCount = 0;
+            low = 0;
+            high = 23;
+            animalLocation = Math.round(Math.random() * (high - low) + low);
+            document.getElementById("tries").innerHTML = "Number of tries is zero";
+            AnimalDistance = "unknown"
+            document.getElementById("distance").innerHTML = "Distance is " + AnimalDistance;
+            for (var i = 0; i < 24; i++) {
+                document.getElementById(ids[i]).src = "grass.jpg";
+            }
+        }
 
     </script>
 </body>
